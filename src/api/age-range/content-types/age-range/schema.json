@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "age_ranges",
+  "info": {
+    "singularName": "age-range",
+    "pluralName": "age-ranges",
+    "displayName": "AgeRange"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "ageFrom": {
+      "type": "integer"
+    },
+    "ageTo": {
+      "type": "integer"
+    }
+  }
+}

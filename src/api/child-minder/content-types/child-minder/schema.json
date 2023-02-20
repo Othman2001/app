@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "child_minders",
+  "info": {
+    "singularName": "child-minder",
+    "pluralName": "child-minders",
+    "displayName": "childMinder"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "kid": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::kid.kid",
+      "mappedBy": "child_minders"
+    }
+  }
+}

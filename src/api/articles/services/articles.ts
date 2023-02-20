@@ -1,0 +1,5 @@
+/**
+ * articles service
+ */
+
+export default () => ({});

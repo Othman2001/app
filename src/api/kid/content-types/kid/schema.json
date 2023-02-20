@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kids",
+  "info": {
+    "singularName": "kid",
+    "pluralName": "kids",
+    "displayName": "kid",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "child_minders": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::child-minder.child-minder",
+      "inversedBy": "kid"
+    },
+    "age_range": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::age-range.age-range"
+    }
+  }
+}
